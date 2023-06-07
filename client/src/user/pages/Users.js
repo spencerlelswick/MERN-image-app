@@ -3,7 +3,7 @@ import UsersList from '../components/UsersList'
 const Users = () => {
   const USERS = [
     {
-      id: 1,
+      id: 'u1',
       name: 'test',
       image:
         'https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000',

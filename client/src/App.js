@@ -1,18 +1,28 @@
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Switch,
+} from 'react-router-dom'
 import './App.css'
 import Users from './user/pages/Users'
-import { Redirect } from 'react-router-dom/cjs/react-router-dom.min'
 import NewPlace from './places/pages/NewPlace'
+import MainNavigation from './shared/components/Navigation/MainNavigation'
 
 function App() {
   return (
     <Router>
-      <Route path='/' exact={true}>
-        <Users />
-      </Route>
-      <Route path='/places/new' exact={true}>
-        <NewPlace />
-      </Route>
+      <MainNavigation />
+      <main>
+        <Switch>
+          <Route path='/' exact={true}>
+            <Users />
+          </Route>
+          <Route path='/places/new' exact={true}>
+            <NewPlace />
+          </Route>
+        </Switch>
+      </main>
     </Router>
   )
 }

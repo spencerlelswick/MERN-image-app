@@ -1,6 +1,4 @@
-import './Map.css'
-
-const Map = (props) => {
-  return <div className={`map ${props.className}`}></div>
+const Map = () => {
+  return <div>Map</div>
 }
 export default Map

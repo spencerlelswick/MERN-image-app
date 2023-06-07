@@ -21,8 +21,6 @@
 }
 
 .user-item__content {
-  display: flex;
-  flex-direction: row;
   padding: 0;
 }
 
